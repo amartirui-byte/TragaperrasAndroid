@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- La lista ocupa el espacio restante y recicla sus filas, incluso con muchas jugadas. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/paper">
+    <Toolbar android:id="@+id/toolbar" style="@style/AppToolbar" />
+    <TextView style="@style/BodyText" android:padding="@dimen/screen_padding" android:text="@string/history_intro" android:textSize="24sp" android:textColor="@color/ink" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/history_list" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:paddingStart="24dp" android:paddingEnd="24dp" android:divider="@color/line" android:dividerHeight="1dp" android:clipToPadding="false" />
+        <TextView android:id="@+id/history_empty" style="@style/BodyText" android:layout_height="match_parent" android:gravity="center" android:padding="24dp" android:text="@string/history_empty" />
+    </FrameLayout>
+    <Button android:id="@+id/history_back" style="@style/QuietButton" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:text="@string/go_back" />
+</LinearLayout>

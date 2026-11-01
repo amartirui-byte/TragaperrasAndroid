@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Carcasa gráfica; sus colores no intervienen en la lógica de premios. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/purple" android:endColor="@color/purple_dark" android:angle="270" />
+    <corners android:radius="24dp" />
+    <stroke android:width="2dp" android:color="@color/gold" />
+</shape>

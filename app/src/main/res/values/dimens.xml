@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Unidades dp para tamaño y espaciado; los textos usan sp en sus estilos. -->
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="reel_height">176dp</dimen>
+</resources>

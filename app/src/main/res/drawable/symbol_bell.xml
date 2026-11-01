@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dibujo vectorial propio y provisional: campana. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="96dp" android:height="96dp" android:viewportWidth="96" android:viewportHeight="96">
+    <path android:pathData="M38,77 A10,10 0,1 0,58 77" android:fillColor="#B77720" />
+    <path android:pathData="M43,18 A5,5 0,1 0,53 18 A5,5 0,1 0,43 18" android:fillColor="#CF942A" />
+    <path android:pathData="M17,72 Q27,63 27,47 C27,17 69,17 69,47 Q69,63 79,72 L79,77 L17,77 Z" android:fillColor="#F0B943" />
+    <path android:pathData="M37,39 Q34,48 35,55" android:strokeColor="#FFE2A0" android:strokeWidth="7" android:strokeLineCap="round" android:fillColor="#00000000" />
+    <path android:pathData="M22,72 L74,72" android:strokeColor="#CF942A" android:strokeWidth="4" android:strokeLineCap="round" android:fillColor="#00000000" />
+</vector>

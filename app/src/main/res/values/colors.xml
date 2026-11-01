@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta central: cambia estos colores para personalizar todas las pantallas. -->
+    <color name="paper">#FAF6EE</color>
+    <color name="ink">#292033</color>
+    <color name="muted">#655D6F</color>
+    <color name="purple">#54358B</color>
+    <color name="purple_dark">#39225F</color>
+    <color name="lavender">#ECE5F5</color>
+    <color name="gold">#F0C56B</color>
+    <color name="line">#DAD0E5</color>
+    <color name="white">#FFFFFF</color>
+</resources>

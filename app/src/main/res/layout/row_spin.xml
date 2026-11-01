@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fila del histórico: SpinAdapter añade fecha, combinación y saldo. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/row_summary"
+    style="@style/BodyText" android:paddingTop="20dp" android:paddingBottom="20dp" android:textColor="@color/ink" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dibujo vectorial propio y provisional: gema. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="96dp" android:height="96dp" android:viewportWidth="96" android:viewportHeight="96">
+    <path android:pathData="M23,20 L73,20 L89,42 L48,85 L7,42 Z" android:fillColor="#538FBD" />
+    <path android:pathData="M23,20 L39,20 L29,42 L7,42 Z" android:fillColor="#A6D7E4" />
+    <path android:pathData="M39,20 L57,20 L67,42 L29,42 Z" android:fillColor="#D2EBEE" />
+    <path android:pathData="M57,20 L73,20 L89,42 L67,42 Z" android:fillColor="#77BACE" />
+    <path android:pathData="M29,42 L67,42 L48,85 Z" android:fillColor="#78BED8" />
+</vector>

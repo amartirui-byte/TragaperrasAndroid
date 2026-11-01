@@ -1,0 +1,2 @@
+// Versión fija del plugin para que la compilación sea reproducible.
+plugins { id 'com.android.application' version '8.13.2' apply false }

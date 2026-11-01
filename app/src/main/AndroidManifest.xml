@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Producto 1: primera versión de la aplicación Tragaperras.
+
+    El jugador empieza una partida con 100 monedas virtuales y puede hacer girar
+    tres rodillos. Cada giro cuesta 10 monedas. Dos símbolos iguales dan un premio
+    de 10 monedas y tres iguales dan 100. Si los tres son distintos, no hay premio.
+
+    La aplicación tiene una pantalla de inicio, una pantalla de juego y un histórico.
+    Las monedas y las jugadas se guardan en SQLite dentro del dispositivo. RxJava
+    permite consultar y guardar esos datos sin bloquear la pantalla.
+
+    Este archivo indica a Android cuáles son las pantallas y cómo se inicia la app.
+    Las reglas están en GameRules y la presentación se define en los recursos XML.
+    Esta versión funciona sin conexión y no solicita permisos especiales.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- SlotApplication prepara el repositorio compartido por las tres pantallas. -->
+    <application android:name=".SlotApplication" android:allowBackup="false"
+        android:label="@string/app_name" android:icon="@drawable/ic_app"
+        android:supportsRtl="true" android:theme="@style/AppTheme"
+        android:enableOnBackInvokedCallback="false">
+        <!-- Muestra las jugadas guardadas. Solo se abre desde la propia aplicación. -->
+        <activity android:name=".ui.HistoryActivity" android:exported="false" />
+        <!-- Muestra el saldo, los tres rodillos y los botones para jugar. -->
+        <activity android:name=".ui.GameActivity" android:exported="false" />
+        <!-- Es la bienvenida y permite iniciar, continuar o empezar una nueva partida. -->
+        <activity android:name=".ui.MainActivity" android:exported="true">
+            <!-- MAIN y LAUNCHER hacen que esta pantalla se abra al tocar el icono de la app. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dibujo vectorial propio y provisional: estrella. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="96dp" android:height="96dp" android:viewportWidth="96" android:viewportHeight="96">
+    <path android:pathData="M48,9 L60,34 L88,38 L68,58 L73,86 L48,73 L23,86 L28,58 L8,38 L36,34 Z" android:fillColor="#F2BE45" android:strokeColor="#CE902D" android:strokeWidth="3" android:strokeLineJoin="round" />
+    <path android:pathData="M48,20 L52,43 L23,42 L41,37 Z" android:fillColor="#FFE8A1" />
+</vector>

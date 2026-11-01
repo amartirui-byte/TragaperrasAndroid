@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla de juego: los tres ReelView dibujan y desplazan imágenes mediante Canvas. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/paper">
+    <Toolbar android:id="@+id/toolbar" style="@style/AppToolbar" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="@dimen/screen_padding" android:gravity="center_horizontal">
+            <TextView style="@style/BodyText" android:text="@string/your_balance" android:textSize="12sp" android:letterSpacing="0.12" android:gravity="center" />
+            <TextView android:id="@+id/game_coins" style="@style/BalanceText" android:layout_marginTop="4dp" />
+            <TextView android:id="@+id/spin_cost" style="@style/BodyText" android:gravity="center" android:layout_marginTop="4dp" android:textSize="14sp" />
+            <!-- La carcasa y los rodillos son exclusivamente gráficos. No contienen reglas. -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp"
+                android:orientation="vertical" android:background="@drawable/bg_machine" android:padding="16dp">
+                <TextView style="@style/BodyText" android:text="@string/machine_label" android:textColor="@color/gold" android:gravity="center" android:letterSpacing="0.18" android:fontFamily="sans-serif-medium" android:paddingBottom="16dp" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
+                    <com.example.tragaperras.ui.ReelView android:id="@+id/reel_one" android:layout_width="0dp" android:layout_height="@dimen/reel_height" android:layout_weight="1" android:layout_marginEnd="4dp" />
+                    <com.example.tragaperras.ui.ReelView android:id="@+id/reel_two" android:layout_width="0dp" android:layout_height="@dimen/reel_height" android:layout_weight="1" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" />
+                    <com.example.tragaperras.ui.ReelView android:id="@+id/reel_three" android:layout_width="0dp" android:layout_height="@dimen/reel_height" android:layout_weight="1" android:layout_marginStart="4dp" />
+                </LinearLayout>
+                <TextView style="@style/BodyText" android:layout_marginTop="14dp" android:text="@string/machine_hint" android:textColor="@color/white" android:textSize="12sp" android:gravity="center" />
+            </LinearLayout>
+            <TextView android:id="@+id/result_message" style="@style/BodyText" android:layout_marginTop="24dp" android:minHeight="64dp"
+                android:gravity="center" android:text="@string/ready_message" android:textColor="@color/ink" android:accessibilityLiveRegion="polite" />
+            <!-- Los pesos reparten el ancho de los botones sin fijar el tamaño de pantalla. -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
+                <Button android:id="@+id/spin_button" style="@style/PrimaryButton" android:layout_width="0dp" android:layout_weight="1" android:layout_marginEnd="4dp" android:text="@string/spin" android:enabled="false" />
+                <Button android:id="@+id/stop_button" style="@style/SecondaryButton" android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="4dp" android:text="@string/stop" android:enabled="false" />
+            </LinearLayout>
+            <Button android:id="@+id/leave_button" style="@style/QuietButton" android:text="@string/leave_game" android:enabled="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

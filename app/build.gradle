@@ -1,0 +1,28 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.example.tragaperras'
+    // SDK 35 compila la app; minSdk permite instalarla desde Android 7.
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.example.tragaperras'
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName '0.1'
+    }
+    // Las pantallas usan XML y las clases se escriben en Java.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildTypes { release { minifyEnabled false } }
+}
+
+dependencies {
+    // RxJava ejecuta SQLite fuera de la interfaz; RxAndroid devuelve el resultado al hilo visual.
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.12'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+    // Pruebas de las reglas sin abrir un emulador ni depender de Android.
+    testImplementation 'junit:junit:4.13.2'
+}

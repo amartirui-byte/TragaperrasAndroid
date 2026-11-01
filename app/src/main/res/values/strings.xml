@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Todos los textos visibles se editan aquí; las cifras proceden de GameRules. -->
+    <string name="app_name">Tragaperras</string>
+    <string name="welcome_eyebrow">TU PEQUEÑA MÁQUINA DE LA SUERTE</string>
+    <string name="welcome_title">¿Probamos suerte?</string>
+    <string name="initial_hint">Empieza con %1$d monedas virtuales. Gira los rodillos y descubre tu combinación.</string>
+    <string name="your_balance">TUS MONEDAS</string>
+    <string name="coins_amount">%1$d monedas</string>
+    <string name="start_game">Iniciar partida</string>
+    <string name="continue_game">Continuar partida</string>
+    <string name="new_game">Nueva partida</string>
+    <string name="close_app">Cerrar aplicación</string>
+    <string name="best_title">Tus 3 mejores jugadas</string>
+    <string name="virtual_coins">Solo monedas virtuales · Proyecto educativo</string>
+    <string name="new_confirmation_title">¿Empezar de nuevo?</string>
+    <string name="new_confirmation">El saldo volverá a %1$d monedas. El histórico de jugadas se conservará.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="understood">Entendido</string>
+
+    <!-- Pantalla de juego y mensajes durante la animación. -->
+    <string name="machine_label">TRIPLE SUERTE</string>
+    <string name="machine_hint">La combinación ganadora queda en el centro</string>
+    <string name="spin_cost">Cada giro cuesta %1$d monedas</string>
+    <string name="spin">Girar</string>
+    <string name="stop">Parar</string>
+    <string name="leave_game">Volver al inicio</string>
+    <string name="ready_message">Todo listo. Pulsa Girar para jugar.</string>
+    <string name="spinning_message">¡Rodillos en marcha!</string>
+    <string name="reel_spinning">Rodillo girando</string>
+    <string name="result_message">Premio: %1$d monedas\nCambio de saldo: %2$s</string>
+    <string name="no_coins">No quedan monedas suficientes. Puedes comenzar una nueva partida desde el inicio.</string>
+    <string name="wait_for_reels">Espera a que terminen los rodillos.</string>
+    <string-array name="symbol_names">
+        <item>Cerezas</item><item>Manzana</item><item>Campana</item><item>Estrella</item><item>Gema</item>
+    </string-array>
+
+    <!-- Navegación, histórico y reglas. -->
+    <string name="home_title">Inicio</string>
+    <string name="history_title">Histórico de jugadas</string>
+    <string name="history_intro">Cada giro tiene su historia</string>
+    <string name="history_empty">Todavía no hay jugadas.\n¡La primera puede ser la tuya!</string>
+    <string name="history_summary">%1$s\n%2$s\nCambio: %3$s · Saldo: %4$d monedas</string>
+    <string name="go_back">Volver</string>
+    <string name="rules_title">Cómo se juega</string>
+    <string name="rules_message">Comienzas con %1$d monedas virtuales. Cada giro cuesta %2$d.\n\nTres símbolos iguales: premio de %3$d monedas.\nExactamente dos iguales: premio de %4$d monedas.\nTres distintos: sin premio.\n\nEl premio se suma después de descontar el giro. Todos los símbolos tienen la misma probabilidad. Parar adelanta la frenada; el resultado ya se ha sorteado al pulsar Girar.\n\nNueva partida reinicia el saldo y conserva el histórico.</string>
+    <string name="error_title">No se pudo completar la operación</string>
+    <string name="error_message">Vuelve a intentarlo. Si el problema continúa, cierra y abre la aplicación.</string>
+</resources>

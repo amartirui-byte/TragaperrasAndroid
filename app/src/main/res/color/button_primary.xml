@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Color más suave cuando el presentador desactiva una acción. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="#B1A4C5" />
+    <item android:color="@color/purple" />
+</selector>

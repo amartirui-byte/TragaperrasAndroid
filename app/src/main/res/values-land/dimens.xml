@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- En horizontal se reduce la altura del rodillo; el contenido permite desplazarse. -->
+    <dimen name="reel_height">116dp</dimen>
+</resources>

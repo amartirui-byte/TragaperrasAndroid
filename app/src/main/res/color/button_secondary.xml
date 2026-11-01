@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo del botón secundario para sus estados habilitado y deshabilitado. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="#EEEAEF" />
+    <item android:color="@color/lavender" />
+</selector>
